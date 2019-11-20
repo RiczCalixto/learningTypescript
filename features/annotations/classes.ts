@@ -1,9 +1,9 @@
 class Vehiicle {
   //color: string = 'red';
-  color: string;
+  //color: string;
+  //ao anotar como public, perde-se a necessidade de instanciar fora do construct e dar this dentro
+  constructor(public color: string) {
 
-  constructor(color: string) {
-    this.color = color
   }
 
   public drive(): void {
